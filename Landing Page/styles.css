@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* .webpage{
+    background-color: rgb(17, 224, 239);
+} */
+
+.header{
+    background-color: rgb(113, 9, 113);
+}
+
+
+img{
+    width: 120px;
+    height: 66px;
+    object-fit: contain;
+    padding-top: 0%;
+}
+
+.header a{
+    float: right;
+    color: rgb(100, 208, 100);
+    text-align: center;
+    padding: 25px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.header a:hover {
+    background-color: rgb(100, 208, 100);
+    color: rgb(113, 9, 113);
+  }
+
+.slider{
+    width: auto;
+    height: 600px;
+    overflow: hidden;
+    margin: 0 auto;
+    background-color: rgb(17, 224, 239);
+}
+
+.slider img{
+    width: auto;
+    height: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 0.7s all ease-in-out;
+    position: relative;
+
+}
+.slider:hover .fade-in-text{
+    font-family: Arial;
+    font-size: 60px;
+    -webkit-animation: fadeIn 2s;
+    -moz-animation: fadeIn 2s;
+    -o-animation: fadeIn 2s;
+    -ms-animation: fadeIn 2s;
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+@-moz-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+@-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+@-o-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+@-ms-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+.slider .first{
+    position: absolute;
+    top: 500px;
+    left: 100px;
+    display: none;
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.slider .second{
+    position: absolute;
+    top:550px;
+    left: 100px;
+    display: none;
+    color:  #f8e058;
+    font-size: 60px;
+}
+
+
+.slider .text{
+    position: absolute;
+    top: 400px;
+    left: 50px;
+}
+
+.slider:hover img{
+    transform: scale(1.5);
+    opacity: 0.9;
+}
+
+.slider:hover .first{
+    transform: scale(1.3);
+    transition-duration: 3ms;
+    display: block;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: rgb(0, 213, 255);
+}
+
+.slider:hover .second{
+    transform: scale(1.3);
+    transition-duration: 5s;
+    display: block;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+}
+
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    height: auto;
+    width: auto;
+    background-color: rgb(113, 9, 113);
+    margin-top: 0px;
+}
+
+.about .text{
+    padding-top: 10px;
+    font-size: 18px;
+    padding-left: 25px;
+    padding-right: 20px;
+}
+
+.about .text h1{
+    padding: 3px;
+    margin-top: 0px;
+    color: rgba(0, 255, 110, 0.963);
+}
+
+.about img{
+    width: 350px;
+    height:350px;
+    border-radius: 10px;
+}
+
+.about p{
+    padding-top: 10px;
+    color: #fff;
+    text-align: justify;
+    font-size: 15px;
+}
+
+.about:hover p{
+    color: #ffff00;
+}
+.about:hover{
+    box-shadow: -5px -5px 15px #000, 5px 5px 15px #000;
+    border-radius: 15px;
+    margin: 2px;
+}
+.about:hover img{
+    box-shadow: 5px 5px 15px #fff;
+}
+
+.text_under a{
+    text-decoration: none;
+}
+
+.clubs{
+    margin-top: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-image: url('images/trophy-bg.jpg') ;
+    background-size: cover;
+}
+
+.clubs h1{
+    text-align: center;
+    font-size: 40px;
+    color: #139c1a;
+    background-color: #f3eadb;
+    width: 920px;
+    height: 50px;
+    margin-left: 170px;
+    border-radius: 10px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+    box-shadow: 10px 10px 15px #000;
+    box-sizing: border-box;
+}
+
+.clubs .ars,.avl,.bou,.bre,.bri,.bur,.che,.cry,.eve,.ful,.liv,
+.lut,.mci,.mun,.new,.nfo,.shu,.tot,.whu,.wol {
+    display: flex;
+    padding: 20px 5px 20px 20px;
+    height: auto;
+    max-width: 1200px;
+    background-color: #f7e7ce;
+    margin: 40px 130px 30px 130px;
+    border-radius: 20px;
+    text-align: justify;
+}
+
+.clubs a{
+    text-decoration: none;
+    color: #000;
+    max-width: 1200px;
+}
+
+.clubs img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+}
+
+.clubs .text{
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.clubs .ars:hover,.avl:hover,.bou:hover,.bre:hover,
+.bri:hover,.bur:hover,.che:hover,.cry:hover,.eve:hover,
+.ful:hover,.liv:hover,.lut:hover,.mci:hover,.mun:hover,
+.new:hover,.nfo:hover,.shu:hover,.tot:hover,.whu:hover,.wol:hover{
+    box-shadow: 5px 5px 15px #fff, -5px -5px 15px #fff;
+    background-color: rgb(113, 9, 113);
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 30px;
+    color: rgb(100, 208, 100);
+}
+
+.campaign a{
+    text-decoration: none;
+}
+
+.no-room-for-racism{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    height: auto;
+    width: auto;
+    background-color: #000;
+    margin-top: 0px;
+}
+
+.no-room-for-racism .text{
+    padding-top: 10px;
+    font-size: 18px;
+    padding-left: 25px;
+    padding-right: 20px;
+}
+
+.no-room-for-racism .text h1{
+    padding: 3px;
+    margin-top: 0px;
+    color: #fff;
+}
+
+.no-room-for-racism img{
+    width: 300px;
+    height:200px;
+    border-radius: 10px;
+}
+
+.no-room-for-racism p{
+    color: #fff;
+    text-align: justify;
+    padding-top: 10px;
+}
+
+.no-room-for-racism:hover{
+    box-shadow: -5px -5px 15px #fff, 10px 10px 25px #fff;
+    border-radius: 15px;
+    margin: 1px;
+}
+
+.rainbow-laces{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    height: auto;
+    width: auto;
+    background-color: #f47907;
+    margin-top: 0px;
+}
+
+.rainbow-laces .text{
+    padding-top: 10px;
+    font-size: 18px;
+    padding-left: 25px;
+    padding-right: 20px;
+}
+
+.rainbow-laces .text h1{
+    padding: 3px;
+    margin-top: 0px;
+    font-weight: bold;
+    color: rgb(113, 9, 113);
+}
+
+.rainbow-laces img{
+    width: 300px;
+    height:300px;
+    border-radius: 10px;
+}
+
+.rainbow-laces p{
+    color: #fff;
+    text-align: justify;
+    padding-top: 10px;
+}
+
+.rainbow-laces:hover{
+    box-shadow: -5px -5px 15px #fff, 5px 5px 15px #fff;
+    border-radius: 15px;
+    margin: 1px;
+}
+
+.rainbow-laces:hover p{
+    color:rgba(0, 255, 110, 0.963);
+}
+
+.contact{
+    width:auto;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    padding-top: 150px;
+    background-color: rgb(244, 248, 189);
+}
+
+.facebook,.instagram,.twitter,.youtube{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    text-align: center;
+    margin: 25px;
+    box-shadow: 1px 2px 10px #000;
+    line-height: 92px;
+}
+
+.contact i{
+    transition: all 0.3s linear;
+}
+
+.contact a:hover i{
+    transform: scale(1.4);
+}
+.facebook{
+    background-color: rgb(0, 119, 255);
+}
+.facebook a{
+    color: #fff;
+}
+
+.instagram{
+    background-color: rgb(236, 41, 171);
+}
+.instagram a{
+    color: #fff;
+}
+
+.twitter{
+    background-color: #000;
+}
+.twitter a{
+    color: #fff;
+}
+
+.youtube{
+    background-color: rgb(255, 0, 0);
+}
+.youtube a{
+    color: #fff;
+}
+
+.contact a{
+    text-decoration: none;
+}
+
+footer{
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
